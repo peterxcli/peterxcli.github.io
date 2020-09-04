@@ -1,10 +1,4 @@
 <!DOCTYPE html>
-<script type="text/javascript">
-    function download(d) {
-        if (d == 'Select document') return;
-        window.location = 'http://example.com' + d;
-    }
-</script>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -14,20 +8,29 @@
         麗山科學研習社
         <pre>
             數學
-            <select name="數學" onChange="download(this.value)">
-                <option>選擇檔案下載</option>
-                <option value="week0"><a href = "files/數學//math_week0.docx" download = "math_week0.docx">點選下載第0週講義</a></option>
-            </select>
+            <form onsubmit="this.action = document.getElementById('filename').value">
+                <select id="filename">
+                    <option>選擇檔案下載</option>
+                    <option value="files/數學/math_week0.docx">第0週講義</option>
+                </select>
+                <input type="submit" value="Download" class="grey-btn" />
+            </form>
             物理
-            <select name="物理" onChange="download(this.value)">
-                <option>選擇檔案下載</option>
-                <option value="week0"><a href = "files/物理/phys_week0.docx" download = "phys_week0.docx">點選下載第0週講義</a></option>
-            </select>
+            <form onsubmit="this.action = document.getElementById('filename').value">
+                <select id="filename">
+                    <option>選擇檔案下載</option>
+                    <option value="files/物理/phys_week0.docx">第0週講義</option>
+                </select>
+                <input type="submit" value="Download" class="grey-btn" />
+            </form>
             化學
-            <select name="化學" onChange="download(this.value)">
-                <option>選擇檔案下載</option>
-                <option value="week0"><a href = "files/化學/chem_week0.docx" download = "chem_week0.docx">點選下載第0週講義</a></option>
-            </select>
+            <form onsubmit="this.action = document.getElementById('filename').value">
+                <select id="filename">
+                    <option>選擇檔案下載</option>
+                    <option value="files/化學/chem_week0.docx">第0週講義</option>
+                </select>
+                <input type="submit" value="Download" class="grey-btn" />
+            </form>
         </pre>
     </body>
 </html>
