@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>檔案下載區</title>
+    </head>
+    <body>
+        麗山科學研習社檔案下載區
+        <pre>
+            數學
+            <form onsubmit="this.action = document.getElementById('filename').value">
+                <select id="filename">
+                    <option>選擇檔案下載</option>
+                    <option value="files/數學/math_week0.docx">第0週講義</option>
+                </select>
+                <input type="submit" value="Download" class="grey-btn" />
+            </form>
+            物理
+            <form onsubmit="this.action = document.getElementById('filename').value">
+                <select id="filename">
+                    <option>選擇檔案下載</option>
+                    <option value="files/物理/phys_week0.docx">第0週講義</option>
+                </select>
+                <input type="submit" value="Download" class="grey-btn" />
+            </form>
+            化學
+            <form onsubmit="this.action = document.getElementById('filename').value">
+                <select id="filename">
+                    <option>選擇檔案下載</option>
+                    <option value="files/化學/chem_week0.docx">第0週講義</option>
+                </select>
+                <input type="submit" value="Download" class="grey-btn" />
+            </form>
+        </pre>
+    </body>
+</html>
